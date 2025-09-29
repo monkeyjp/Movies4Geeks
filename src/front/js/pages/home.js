@@ -4,7 +4,7 @@ import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import { CarouselComp } from "../component/carouselComp";
 import { PosterCarousel } from "../component/posterCarousel";
-import {Navbar} from "../component/navbar"
+import { Navbar } from "../component/navbar"
 import { Reviews } from "../component/reviews";
 import "../../styles/addReviewModal.css"
 
@@ -13,17 +13,19 @@ import "../../styles/addReviewModal.css"
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
+
+
 	return (
 		<div className="text-center container">
-			
+
 			<CarouselComp />
 
 			<div id="modal-root"></div>
-			
-			<PosterCarousel view="topRated" title="Top Rated"/>
-			<PosterCarousel view="Action" title="Action"/>
-			<PosterCarousel view="Comedy" title="Comedy"/>
-			<PosterCarousel view="Horror" title="Horror"/>
+
+			<PosterCarousel view="topRated" title="Top Rated" />
+			<PosterCarousel view="Action" title="Action" />
+			<PosterCarousel view="Comedy" title="Comedy" />
+			<PosterCarousel view="Horror" title="Horror" />
 			{/* <p>
 				<img src={rigoImageUrl} />
 			</p>
